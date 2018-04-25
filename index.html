@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GeoCode API</title>
+  <script src='assets/axios/axios.min.js'></script>
+  <script src='assets/materialize/js/materialize.min.js'></script>
+  <link rel='stylesheet' href='assets/materialize/css/materialize.min.css' />
+  <link rel='stylesheet' href='assets/materialize-icons/materialize-icons.css' />
+  <link rel='stylesheet' href='styles.css' />
+</head>
+
+<body>
+  <div class='container'>
+    <h1> Geocode Exp</h1>
+    <form>
+      <div class='input-field'>
+        <input type='text' id='addressInput' class='validate'/>
+        <label for='addressInput'>Search</label> 
+      </div>
+      <button class='btn' id='loadMap'>Search </button>
+      <button class='btn' id='clearAll'>Clear </button>
+    </form>
+    <div id='statusMsg'></div>
+    <div id='map'></div>
+  </div>
+</body>
+
+<script src='geocode.js'></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeQJEG6NrQtXS0gQhuUpu86w2W2VDhLa8">
+</script>
+
+</html>
